@@ -1,30 +1,32 @@
 #!/usr/bin/python
 
-import sys, MySQLdb, subprocess
+import sys
+import MySQLdb
+import subprocess
 from daemon import Daemon
-from os import  chdir
+from os import chdir
 from datetime import datetime
 from time import sleep
 
 ## Config ##
 
 # Path to the Lansnap install directory
-lspath    = "/home/sean/python/lansnap/"
+lspath = "/home/sean/python/lansnap/"
 
 # Log file path and file
-logfile   = "ls.log"
+logfile = "ls.log"
 
 # Dhdpd.hosts file path and file
-hostfile  = ""
+hostfile = ""
 
 # Databse Host
-dbhost    = ""
+dbhost = ""
 # Database User
-dbuser    = ""
+dbuser = ""
 # Database Password
-dbpass    = ""
+dbpass = ""
 # Database name
-dbname    = "pico"
+dbname = "pico"
 
 # Number of seconds the daemon should sleep each pass
 sleepytime = 2
@@ -35,8 +37,9 @@ sleepytime = 2
 try:
     lslog = open(logfile, "a", 0)
 except IOError, e:
-    print "Was unable to open %s: %s" % (logfile,e)
+    print "Was unable to open %s: %s" % (logfile, e)
     sys.exit(1)
+
 
 # Logger
 def logEntry(logtext):
@@ -44,26 +47,28 @@ def logEntry(logtext):
     line = time + " - " + str(logtext)
     lslog.write(line + "\n")
 
+
 # Rewrite the dhcpd hosts file
 def hostWrite(dhcpText):
     try:
         dhcphosts = open(hostfile, "w")
     except IOError, e:
-        logEntry("Could not open %s: %s" % (hostfile,e))
+        logEntry("Could not open %s: %s" % (hostfile, e))
     dhcphosts.write(dhcpText + "\n")
     dhcphosts.close()
+
 
 #Connect to the database
 def dbConnect():
     try:
-        db = MySQLdb.Connect   (host = dbhost, 
-                                port = 3306, 
-                                user = dbuser, 
-                                passwd = dbpass, 
-                                db = dbname)
+        db = MySQLdb.Connect(host=dbhost,
+                                port=3306,
+                                user=dbuser,
+                                passwd=dbpass,
+                                db=dbname)
     except MySQLdb.Error, e:
         logEntry("Error %d: %s" % (e.args[0], e.args[1]))
-        sys.exit (1)
+        sys.exit(1)
     else:
         logEntry("Successfully connected to database")
         return db.cursor()
@@ -74,7 +79,7 @@ class MyDaemon(Daemon):
     def run(self):
         chdir(lspath)
         cursor = dbConnect()
-        
+
         # Do useful things here
         while True:
             # Check the status on the Lansnap database
@@ -86,18 +91,18 @@ class MyDaemon(Daemon):
             if (status_check > 0):
                 hostFileContent = ""
                 logEntry("New host entries found, rewriting %s ..." % hostfile)
-                cursor.execute("""SELECT mac_address,ip_address 
+                cursor.execute("""SELECT mac_address,ip_address
                                   FROM lansnap_addresses""")
                 hosts = cursor.fetchall()
                 for host in hosts:
                     ip = host[1]
                     unformattedMac = host[0]
-                    macBlocks = [unformattedMac[x:x+2] for x in xrange(0, len(unformattedMac), 2)]
+                    macBlocks = [unformattedMac[x:x + 2] for x in xrange(0, len(unformattedMac), 2)]
                     mac = ':'.join(macBlocks)
                     hostname = ip.replace(".", "_")
-                    entry = "host  {hardware "+ hostname +" ethernet "+ mac +" ; fixed-address "+ ip +"; }\n"
+                    entry = "host  {hardware " + hostname + " ethernet " + mac + " ; fixed-address " + ip + "; }\n"
                     hostFileContent += entry
-                
+
                 # Rewrite the dhcpd.hosts file
                 hostWrite(hostFileContent)
                 # Reset the status of the database
@@ -110,7 +115,6 @@ class MyDaemon(Daemon):
                 logEntry("Nothing to do here...")
 
             sleep(sleepytime)
-
 
 
 #When called from the command line
