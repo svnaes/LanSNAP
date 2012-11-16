@@ -1,0 +1,25 @@
+
+div.thumbnail
+{
+	float: left;
+	width: 160px;
+	margin: 5px;
+}
+
+div.ug_nav a.active
+{
+	color: #000;
+}
+
+div.user_gallery
+{
+	margin: 15px 0;
+}
+
+div.ug_nav
+{
+	margin: 5px 0;
+	border-top: 1px #748F9C solid;
+	border-bottom: 1px #748F9C solid;
+	padding: 3px 0;
+}

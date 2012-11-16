@@ -1,0 +1,164 @@
+
+.noheight
+{
+	height: auto;
+}
+
+.blog_pad
+{
+	padding: 1px 0;
+}
+
+.blog_home
+{
+	margin-top: 45px;
+	padding: 10px;
+}
+
+h3.blog_choice,
+#ap_content form h3.blog_choice
+{
+	color: #000;
+	font-family: arial, helvetica;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+table.blog_start
+{
+	width: auto;
+	margin: 0 auto;
+}
+
+table.blog_start td
+{
+	padding: 5px 0;
+	padding-right: 5px;
+}
+
+.blog_home
+{
+	text-align: center;
+}
+
+.blog_existing
+{
+	height: 150px;
+	width: 500px;
+	margin: 0 auto;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background: #fff;
+}
+
+table.blog_entry_list td
+{
+	padding: 3px;
+	text-align: left;
+}
+
+table.blog_entry_list tr.a td
+{
+	background: #abd485;
+}
+table.blog_entry_list tr.b td
+{
+	background: #cccccc;
+}
+
+table.blog_entry_list td.title
+{
+	width: 350px;
+}
+
+table.blog_entry_list td.date
+{
+	width: 100px;
+}
+
+table.blog_entry_list td.actions
+{
+	width: 50px;
+}
+
+div.tab_button
+{
+	width: 75px;
+	padding: 3px;
+	font-size: 10px;
+	font-family: arial, helvetica;
+	color: #000;
+	cursor: pointer;
+	text-align: center;
+	border: 1px #000 solid;
+	background: #fff;
+	line-height: 10px;
+}
+
+div.tabbed_content
+{
+	display: none;
+	position: relative;
+}
+
+table.blog_tablist td
+{
+	padding-right: 1px;
+}
+
+table.blog_tablist
+{
+	margin-bottom: 5px;
+}
+
+#blog_status, #blog_status2
+{
+	font-size: 10px;
+	font-style: italic;
+	color: #000;
+	font-family: arial, helvetica;
+}
+
+table.blog_options td
+{
+	padding: 3px 0;
+	padding-right: 5px;
+}
+
+#blog_admin_comments .name,
+#blog_admin_comments .date
+{
+	width: 100px;
+	float: left;
+	overflow: hidden;
+	height: 50px;
+}
+
+#blog_admin_comments .actions
+{
+	width: 50px;
+	float: left;
+	overflow: hidden;
+	height: 50px;
+}
+
+#blog_admin_comments .message
+{
+	width: 400px;
+	height: 50px;
+	float: left;
+	overflow: hidden;
+}
+
+#blog_admin_comments .message .inactive
+{
+	font-style: italic;
+}
+
+.blog_admin_comment
+{
+	padding-bottom: 3px;
+	margin-bottom: 3px;
+	border-bottom: 1px #ccc solid;
+}

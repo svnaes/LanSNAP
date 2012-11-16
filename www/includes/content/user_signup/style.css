@@ -1,0 +1,36 @@
+
+.user_signup_option
+{
+	margin: 10px 0;
+}
+
+.user_signup_option .description
+{
+	font-weight: bold;
+}
+
+.group_title
+{
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.uso_left
+{
+	width: 60px;
+	float: left;
+	text-align: center;
+}
+
+.uso_right
+{
+	float: left;
+}
+
+table.user_register td
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+}

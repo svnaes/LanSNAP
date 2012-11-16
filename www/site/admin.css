@@ -1,0 +1,328 @@
+
+#admin_controller
+{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 80px;
+	background: #070707 url([URL]site/images/panel_bg.jpg) top repeat-x;
+	color: #fff;
+	font-family: tahoma;
+	font-size: 8pt;
+	z-index: 12;
+}
+
+#ap_content
+{
+	font-family: tahoma;
+	font-size: 8pt;
+	
+	overflow-x: auto;
+	overflow-y: auto;
+	padding: 5px;
+	color: #000;
+}
+
+#ap_content form *
+{
+	font-family: tahoma;
+	font-size: 8pt;
+}
+
+.pngn
+{
+	margin-right: 5px;
+}
+
+#admin_controller .title
+{
+	font-weight: bold;
+}
+
+#navigate
+{
+	width: 225px;
+}
+
+.inactive
+{
+	font-style: italic;
+	color: #333333;
+}
+
+#page_actions
+{
+	text-align: center;
+	padding: 3px;
+}
+
+#action_panel 
+{
+	position: absolute;
+	display: none;
+	z-index: 13;
+	border: 1px #363636 solid;
+	background: #b7b7b7 url([URL]site/images/panel_content_bg.jpg) top repeat-x;
+}
+
+#ap_title_bg
+{
+	background: #99ccff url([URL]site/images/panel_top.jpg) top repeat-x;
+	height: 20px;
+	width: 100%;
+	position: relative;
+}
+
+#ap_title
+{
+	height: 20px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+#ap_close
+{
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	width: 16px;
+	height: 16px;
+}
+
+.menu_item
+{
+	padding-bottom: 10px;
+}
+
+#ap_table
+{
+	width: 100%;
+	margin-top: 5px;
+}
+
+#lap_pages ul, #lap_content ul, #lap_users ul
+{
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
+}
+
+#lap_pages, #lap_content, #lap_users
+{
+	display: none;
+}
+
+.ap_text
+{
+	width: 250px;
+}
+
+.ap_textarea
+{
+	width: 250px;
+	height: 100px;
+}
+
+.ap_textarea_lg
+{
+	width: 400px;
+	height: 150px;
+}
+
+.indicator
+{
+	width: 16px;
+	height: 16px;
+	float: left;
+}
+
+.mini
+{
+	font-size: xx-small;
+}
+
+#admin_controller a
+{
+	color: #fff;
+}
+
+#user_form .title
+{
+	font-weight: bold;
+	border-bottom: 1px #363636 solid;
+}
+
+#manage_users th
+{
+	background: #fff;
+}
+
+#manage_users td
+{
+	border-bottom: 1px #363636 solid;
+	border-right: 1px #363636 solid;
+}
+
+.spaced
+{
+	margin: 10px 0;
+}
+
+.content_div_bg, .content_box_bg
+{
+	width: 100%;
+	height: 100%;
+}
+
+.content_description
+{
+	display: none;
+}
+
+#edit_table
+{
+	width: 100%;
+	height: 100%;
+}
+
+#edit_table td
+{
+	height: 100%;
+}
+
+#co_css, #co_js, #co_main
+{
+	height: 90%;
+	width: 99%;
+}
+
+#co_css form, #co_js form, #co_main form
+{
+	width: 100%;
+	height: 100%;
+}
+
+#co_title
+{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#component_options
+{
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+}
+
+#component_options li
+{
+	list-style-type: none;
+}
+
+.co_hidden
+{
+	display: none;
+}
+
+#ta_css_edit, #ta_js_edit
+{
+	width: 100%;
+	height: 100%;
+}
+
+.pico_move
+{
+	display: none;
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+	background: url([URL]includes/icons/move.png) center no-repeat;
+	cursor: pointer;
+}
+
+.ap_title
+{
+	font-weight: bold;
+	text-decoration: underline;
+	margin: 10px 0;
+}
+
+.ap_overflow
+{
+	padding: 5px;
+	background: #fff;
+	height: 460px;
+	width: 99%;
+	overflow: auto;
+}
+
+#ap_edit_right
+{
+	padding: 0 10px;
+}
+
+#lap_content ul, #lap_pages ul
+{
+	float: left;
+}
+
+#footer_bar
+{
+	margin-bottom: 82px;
+}
+
+#footer
+{
+	margin-bottom: 82px;
+}
+
+#ap_sh_list ul
+{
+	margin: 0;
+	background: url([URL]site/images/stack.png);
+	padding: 2px;
+}
+
+#ap_sh_list ul ul
+{
+	margin-left: 15px;
+}
+
+#ap_sh_list li
+{
+	list-style-type: none;
+	padding: 3px;
+	margin: 0;
+	border-bottom: 1px #333 dashed;
+}
+
+#ap_sh_list li td
+{
+	padding-right: 5px;
+}
+
+table.admin_list th
+{
+	background: #171717;
+	padding: 2px;
+	color: #fff;
+}
+
+table.admin_list td
+{
+	padding: 2px;
+}
+
+table.admin_list tr.a td
+{
+	background: #bbde9c;
+}
+
+table.admin_list tr.b td
+{
+	background: #cccccc;
+}

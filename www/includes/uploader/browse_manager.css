@@ -1,0 +1,312 @@
+/* FINDME!!!!!!! GLORIA */
+
+#browse-manager
+{
+	background: #cccccc;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: fixed;
+	font-family: tahoma;
+	font-size: 12px;
+	color: #000;
+}
+
+#browse-manager input, #browse-manager button
+{
+	font-family: tahoma;
+	font-size: 12px;
+}
+
+#browse-folder
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 160px;
+	background: #fff;
+	overflow-y: scroll;
+	bottom: 100px;
+}
+
+#browse-queue
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 160px;
+	background: #fff;
+	overflow-y: scroll;
+	bottom: 100px;
+}
+
+#new-folder
+{
+	background: #ccc;
+	bottom: 0;
+	left: 0;
+	width: 160px;
+	height: 70px;
+	position: absolute;
+	border-top: 1px #aaa solid;
+	padding-top: 30px;
+	text-align: center;
+}
+
+#browse-upload
+{
+	border-left: 1px #aaa solid;
+	border-right: 1px #aaa solid;
+	border-top: 1px #aaa solid;
+	left: 160px;
+	right: 160px;
+	bottom: 0;
+	height: 100px;
+	position: absolute;
+}
+
+#browse-actions
+{
+	background: #ccc;
+	bottom: 0;
+	right: 0;
+	width: 160px;
+	height: 100px;
+	position: absolute;
+	border-top: 1px #aaa solid;
+}
+
+#browse-pane
+{
+	top: 0;
+	bottom: 100px;
+	right: 160px;
+	left: 160px;
+	position: absolute;
+	border-left: 1px #ccc solid;
+	border-right: 1px #ccc solid;
+	overflow: auto;
+}
+
+
+div.browse_folder
+{
+	width: 125px;
+	padding-top: 100px;
+	height: 15px;
+	text-align: center;
+	background: url(folder.png) top center no-repeat;
+	margin: 10px auto;
+	cursor: pointer;
+	position: relative;
+}
+
+div.browse_folder .thumb
+{
+	position: absolute;
+	top: 24px;
+	left: 12px;
+	width: 101px;
+	height: 61px;
+}
+
+div.browse_folder .thumb_text
+{
+	position: absolute;
+	top: 46px;
+	left: 12px;
+	width: 101px;
+	text-align: center;
+}
+
+div.browse_back
+{
+	margin: 10px auto;
+	cursor: pointer;
+	padding-left: 20px;
+	background: url(../icons/left-arrow.png) left center no-repeat;
+	height: 16px;
+	width: 40px;
+}
+
+div.thumbnail
+{
+	margin: 5px;
+	background: #fff;
+	padding: 3px;
+	width: 100px;
+	height: 130px;
+	overflow: hidden;
+	float: left;
+	border: 1px #aaa solid;
+	text-align: center;
+	position: relative;
+}
+
+div.file_link
+{
+	margin: 5px;
+	background: #fff;
+	padding: 3px;
+	width: 100px;
+	height: 35px;
+	overflow: hidden;
+	float: left;
+	border: 1px #aaa solid;
+	text-align: center;
+	position: relative;
+}
+
+div.delete_image
+{
+	background: url(../icons/delete.png) left center no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+div.delete_file
+{
+	background: url(../icons/delete.png) left center no-repeat;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+div.edit_image
+{
+	background: url(../icons/images.png) left center no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.click
+{
+	cursor: pointer;
+}
+
+.click:hover
+{
+
+}
+
+#edit_canvas
+{
+	margin: 25px auto;
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+	border: 1px #000 solid;
+}
+
+#edit_image
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+div.canvas_size
+{
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	border: 1px #000 solid;
+	padding: 3px;
+	background: #fff;
+	width: 310px;
+}
+
+div.crop
+{
+	position: absolute;
+	left: 330px;
+	top: 5px;
+	border: 1px #000 solid;
+	padding: 3px;
+	background: #fff;
+	width: 235px;
+}
+
+#save_button
+{
+	position: absolute;
+	left: 330px;
+	top: 5px;
+}
+
+#edit_crop
+{
+	position: absolute;
+	display: none;
+	cursor: pointer;
+	border: 1px blue solid;
+}
+
+#browse-manager button.small
+{
+	font-size: 8px;
+}
+
+table.file_list td
+{
+}
+
+table.file_list
+{
+	width: 100%;
+}
+
+table.file_list th
+{
+	text-align: left;
+}
+
+span.show_thumb
+{
+	display: block;
+	position: relative;
+}
+
+span.show_thumb div.popup_thumb
+{
+	display: none;
+	text-decoration: none;
+}
+
+span.show_thumb:hover div.popup_thumb
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 100px;
+	width: 100px;
+	height: 115px;
+	padding: 3px;
+	background: #fff;
+	border: 1px #666 solid;
+	text-align: center;
+	text-decoration: none;
+	z-index: 2;
+}
+
+div.noprev
+{
+	width: 100px;
+	height: 46px;
+	padding-top: 40px;
+	text-align: center;
+}

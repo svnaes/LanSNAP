@@ -1,0 +1,27 @@
+
+div.comment_hide
+{
+	display: none;
+}
+
+table.blog_synopsis > tbody > tr > td
+{
+	vertical-align: top;
+	padding: 5px;
+}
+
+table.blog_synopsis > tbody > tr > td > *
+{
+	margin-top: 0;
+}
+
+.blog_entry
+{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.bottom-nav
+{
+	text-align: center;
+}

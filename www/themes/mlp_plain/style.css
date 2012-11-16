@@ -1,0 +1,429 @@
+body
+{
+	background: #000 url([URL]images/bg.jpg) top repeat-x;
+}
+
+a
+{
+	color: #748f9c;
+}
+
+p, h1, h2, h3, h4, h5, h6
+{
+	margin: 10px 0;
+}
+
+h1
+{
+	font-size: 22px;
+}
+
+h2
+{
+	font-size: 20px;
+}
+
+h3
+{
+	font-size: 18px;
+}
+
+#page_container
+{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#logo
+{
+	margin-left: 280px;
+	background: url([URL]images/logo.png) bottom left no-repeat;
+	height: 98px;
+}
+
+#bar_top
+{
+	margin-left: 15px;
+	height: 12px;
+	width: 248px;
+	overflow: hidden;
+	background: url([URL]images/bar-top.jpg) bottom center no-repeat;
+}
+
+#bar_bottom
+{
+	margin-left: 15px;
+	height: 8px;
+	width: 248px;
+	overflow: hidden;
+	background: url([URL]images/bar-bottom.jpg) top center no-repeat;
+	margin-bottom: 100px;
+}
+
+#main_layout td.small
+{
+	width: 14px;
+}
+
+#main_layout td.large
+{
+	width: 696px;
+	padding: 20px;
+}
+
+#main_layout td.outer
+{
+	background: #b4b4b4 url([URL]images/content-bg.jpg) top repeat-x;
+}
+
+#main_layout td.inner
+{
+	background: #1c2127 url([URL]images/sidebar.jpg) top right no-repeat;
+	height: 400px;
+	width: 219px;
+	padding: 15px;
+}
+
+#upper_content_bg
+{
+	border: 1px #969696 solid;
+	background: #fff;
+	padding: 3px;
+}
+
+#bottom_boxes
+{
+	width: 695px;
+	margin: 15px auto;
+}
+
+#bottom_boxes td
+{
+	width: 224px;
+}
+
+#bottom_boxes td.b
+{
+	padding: 0 9px;
+}
+
+#box1, #box2, #box3
+{
+	border: 1px #000 solid;
+	background: url([URL]images/box-bg.jpg) top repeat-x;
+	padding: 10px;
+	height: 118px;
+	width: 204px;
+	color: #fff;
+}
+
+#box1 a, #box2 a, #box3 a
+{
+	color: #fc4700;
+	font-weight: bold;
+}
+
+
+#box1 p, #box2 p, #box3 p, #box1 h1, #box1 h2, #box1 h3, #box2 h1, #box2 h2, #box2 h3, #box3 h1, #box3 h2, #box3 h3
+{
+	margin-top: 0;
+}
+
+#bottom_boxes div.shadow
+{
+	background: url([URL]images/box-shadow.png) top center no-repeat;
+	height: 18px;
+	width: 224px;
+}
+
+td.signup_left
+{
+	padding: 3px;
+	font-size: 10px;
+	background: #ccc;
+	width: 250px;
+	border-right: 1px #333 solid;
+	border-bottom: 1px #666 solid;
+}
+
+table.member_list
+{
+	width: auto;
+	margin: 0 auto;
+}
+
+table.member_list td, table.member_list th
+{
+	padding: 3px;
+	font-size: 10px;
+	background: #ccc;
+	border-right: 1px #333 solid;
+	border-bottom: 1px #666 solid;
+}
+
+#right_box_side
+{
+	width: 200px;
+	float: right;
+	padding: 5px;
+	background: #1C2127;
+	border-right: 1px #fff solid;
+	margin-top: 15px;
+}
+
+#box_31 li
+{
+	font-size: 16px;
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+#box_31 ol
+{
+	list-style-type: none;
+}
+
+#box_31 li li
+{
+	font-size: 10px;
+	margin: 0;
+	font-weight: normal;
+}
+
+#box_31 ol
+{
+	padding-left: 30px;
+}
+#box_31 .actions
+{
+	font-size: 10px;
+}
+
+#box_31 .highlight
+{
+	background: yellow;
+}
+
+#box_31 ol span.user
+{
+	display: none;
+}
+
+#box_31 ol ol span.user
+{
+	display: inline;
+}
+
+#box_31
+{
+	position: relative;
+}
+
+#meeting_post_box
+{
+	position: fixed;
+	right: 0;
+	text-align: right;
+	width: 400px;
+	background: #fff;
+	z-index: 3;
+	top: 30%;
+}
+
+#meeting_post_box input.text
+{
+	width: 300px;
+}
+
+#meeting_post_box form
+{
+	float: right;
+}
+
+#vote_window
+{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 286px;
+	height: 286px;
+	margin-top: -150px;
+	margin-left: -150px;
+	background: #fff;
+	z-index: 2;
+	border: 2px #000 solid;
+	padding: 5px;
+	display: none;
+}
+
+#vote_window .question
+{
+	text-align: center;
+	font-size: 18px;
+	margin-top: 50px;
+}
+
+#vote_window .form
+{
+	margin: 15px 0;
+	text-align: center;
+}
+
+.question_answer
+{
+	margin: 10px 0;
+}
+
+.question_answer .title
+{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+table.meeting_entry td
+{
+	padding: 0 1px;
+}
+
+#box_31 li > table > tbody > tr > td > span.actions
+{
+	display: none;
+}
+
+#box_31 li:hover > table > tbody > tr > td > span.actions
+{
+	display: block;
+}
+
+#box_31 li:hover > table > tbody > tr > td
+{
+
+}
+
+.tournament_entry, .team_entry, .match_entry, .round
+{
+	border: 1px #748F9C solid;
+	padding: 5px;
+	margin: 10px;
+	background: #ccc;
+}
+
+.tournament_entry .name, .team_entry .team_name, .round .round_num
+{
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: 1px #748F9C solid;
+	margin-bottom: 5px;
+}
+
+.tournament_entry .more, .team_entry .more
+{
+	margin-top: 5px;
+	font-size: 10px;
+}
+
+.round .title
+{
+	font-weight: bold;
+	color: #666;
+}
+
+
+.round .match
+{
+	margin-left: 20px;
+	font-size: 10px;
+	margin: 5px 10px;
+}
+
+.match .winner, .match_entry .winner
+{
+	font-weight: bold;
+}
+
+.match .loser, .match_entry .loser
+{
+	text-decoration: line-through;
+}
+
+p.winner
+{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.round
+{
+	width: 140px;
+	float: left;
+}
+
+div.survey_question
+{
+	border: 1px #748F9C solid;
+	padding: 5px;
+	margin: 10px;
+	background: #ccc;
+}
+
+div.survey_question .question
+{
+	font-weight: bold;
+}
+
+div.survey_question .answer
+{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+table.register 
+{
+	margin-bottom: 15px;
+}
+
+table.register td.left
+{
+	font-weight: bold;
+	background: #748F9C;
+	border-bottom: 1px #fff solid;
+}
+
+table.register td.right
+{
+	border-bottom: 1px #ccc solid;
+}
+
+table.register td
+{
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+table.mod_register_user td.left
+{
+	font-weight: bold;
+	background: #748F9C;
+	border-bottom: 1px #fff solid;
+}
+
+table.mod_register_user td.right
+{
+	border-bottom: 1px #ccc solid;
+}
+
+table.mod_register_user td
+{
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+span.green
+{
+	color: green;
+}

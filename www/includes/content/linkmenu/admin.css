@@ -1,0 +1,19 @@
+#lm_select
+{
+	width: auto;
+	margin: 0 auto;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+#lm_select table
+{
+	height: 100%;
+	width: 100%;
+}
+
+form
+{
+	position: relative;
+}

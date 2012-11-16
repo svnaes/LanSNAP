@@ -1,0 +1,77 @@
+
+.jscript_gallery
+{
+	position: relative;
+	background: #003581;
+}
+
+.jscript_gallery .jscript_image
+{
+	display: none;
+}
+
+.jscript_gallery .thumbnails
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 64px;
+	overflow: hidden;
+	padding: 0 15px;
+}
+
+.jscript_gallery .thumbnails .previous,
+.jscript_gallery .thumbnails .next
+{
+	position: absolute;
+	cursor: pointer;
+	width: 15px;
+	height: 15px;
+	color: #fff;
+	font-size: 15px;
+	top: 22px;
+}
+
+.jscript_gallery .thumbnails .previous
+{
+	left: 5px;
+}
+
+.jscript_gallery .thumbnails .next
+{
+	right: 5px;
+}
+
+.jscript_gallery .thumbnails .thumbnail
+{
+	width: 80px;
+	border: 1px #fff solid;
+	margin: 6px 20px;
+	float: left;
+	cursor: pointer;
+}
+
+.jscript_gallery .jscript_thumbrow
+{
+	display: none;
+}
+
+.jscript_gallery .jscript_image .title
+{
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	width: 590px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.jscript_gallery .jscript_image .description
+{
+	position: absolute;
+	left: 5px;
+	top: 30px;
+	width: 590px;
+	font-size: 14px;
+}

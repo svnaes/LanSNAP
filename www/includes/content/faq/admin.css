@@ -1,0 +1,12 @@
+#faq_form textarea
+{
+	width: 500px;
+	height: 60px;
+	font-size: 8pt;
+	font-family: tahoma;
+}
+
+#co_main form 
+{
+	height: 115px;
+}

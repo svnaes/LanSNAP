@@ -1,0 +1,3 @@
+SetEnv no-gzip
+RewriteEngine On
+RewriteRule (.*).jpg thumbnail.php?id=$1

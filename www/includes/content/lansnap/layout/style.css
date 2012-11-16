@@ -1,0 +1,131 @@
+body
+{
+	font-family: tahoma;
+	font-size: 12px;
+	color: #000;
+	background: #ccc;
+	margin: 0;
+}
+
+#canvas
+{
+	width: 800px;
+	height: 500px;
+	border: 1px #000 solid;
+	background: #fff;
+	position: relative;
+	margin: 15px auto;
+}
+
+#controls
+{
+	width: 150px;
+	height: 500px;
+	border: 1px #000 solid;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	right: 0;
+	
+}
+
+.clear
+{
+	clear: both;
+}
+
+input.canvas
+{
+	border: 1px #ccc solid;
+	padding: 0;
+	font-size: 12px;
+	width: 30px;
+}
+
+.seat.a
+{
+	background: #333;
+}
+
+.seat.b
+{
+	background: #666;
+}
+
+
+.grid_line
+{
+	background: #cfcfcf;
+	position: absolute;
+	z-index: 1;
+}
+
+.grid_line.five
+{
+	background: #999;
+}
+
+.placeable_container
+{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 2;
+}
+
+.seat
+{
+	
+}
+
+.seat .seat_number
+{
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	display: block;
+	height: 100%;
+	width: 100%;
+	vertical-align: middle;
+}
+
+.banquet_wide .seat
+{
+	float: left
+}
+
+
+.banquet_tall, .banquet_wide
+{
+	border: 1px #000 solid;
+}
+
+.banquet_tall .move
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: green;
+}
+
+.banquet_tall .delete
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 10px;
+	height: 10px;
+	background: red;
+}
+
+.banquet_wide .delete
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 10px;
+	height: 10px;
+	background: red;
+}

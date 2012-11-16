@@ -1,0 +1,47 @@
+How to add content components to Pico
+
+1. Create a folder (100 characters or less), it must have a unique folder name. This folder name is not specific, but should the folder name change your component will stop working if it has been previously used somewhere
+
+2. In that folder put a "config.php" . This is the file that will dictate to pico where certain things are.
+
+3. In the config file, you need to set up your config file in the following format...
+
+$options = array();
+$options['title'] = ''; // what you call your content
+$options['description'] = ''; // a brief description of what your content does, any restrictions, etc
+$options['content_file'] = 'filename.php'; // file that will be called when executing/displaying REQUIRED
+$options['edit_file'] = 'filename.php'; // file that will be called when editing the content
+$options['static_js'] = 'filename.php/js'; // file that will always be included into javascript when the component is called for
+$options['static_css'] = 'filename.php/css'; // same as javascript, only for CSS
+$options['admin_js'] = 'filename.php/js'; // same as static, but if logged in as moderator or higher
+$options['delete_file'] = 'filename.php'; // file that will be called in addition to removing the component from the content-links table
+$options['install_file'] = 'filename.php'; // file that will be called after initally installing the component (good time to gather required information for your component, or create an SQL table if needed)
+
+4. Things to remember:
+	- Pico uses the prototype javascript library (http://prototype.org) and is available on any page loaded by the CMS.
+	- Please use the javascript function add_load_event(function_var) to add a "body onload"
+	- CURRENT_PAGE and CURRENT_ALIAS are constants (both PHP and JS) available to indicate what page we are on
+	- the url() (javascript) function will prefix any url string with the appropriate path for your code
+		ex: your site is on yourdomain.com/site/ ... do not create a url for your component that uses "/site/includes/content/whatever.php", use
+		var target_url = url('includes/content/whatever.php');
+	- the equivalent for PHP is $body->url('URL_GOES_HERE'); this is an object and you may need to "global" it for use in your code
+	- you need to change-dir down to the base directory and require_once 'core.php' if you are referencing or using external files in your component, this is mostly for things like action files or post processing that happens along with ajax
+	- Pico doesn't directly echo to the browser, output buffer gets captured THEN displayed, meaning if you need to use a header() command or something before the page
+	actually renders or outputs anything, you can.
+	
+5. PHP Constants and variables:
+	USER_ACCESS - the current user level of access
+		0 = anyone
+		1 = user
+		2 = author
+		3 = moderator
+		4 = administrator
+		5 = super adminstrator
+	$instance_id - the current content instance id... important for editing or displaying content
+	$component_id - the current content component id... used primarily for component settings but available for your needs
+	
+6. Component install flow
+	1 - user clicks on content, hits "add content"
+	2 - the areas a user can add content to will highlight, he then chooses one
+	3 - the install box appears, he will choose which kind of content to install, what the end-user description will be, and the view settings (access and instance)
+	4 - the component will be installed and linked in the components, you will be given a $component_id should you need one, if you set an "install file", it will be included now, otherwise you will be taken into edit-mode of the component immediately... to call the edit mode after your install script has completed, you need to call the javascript function `Pico_EditContentInstance(instance_id)`

@@ -1,0 +1,32 @@
+body
+{
+	margin: 0;
+	font-size: 10px;
+	font-family: tahoma;
+	color: #000;
+	background: #ccc;
+}
+
+table.survey_answers th
+{
+	background: #000;
+	color: #fff;
+	border-right: 1px #ccc solid;
+}
+
+table.survey_answers td
+{
+	padding: 2px;
+}
+
+table.survey_answers tr.a td
+{
+	background: #fff;
+	border-right: 1px #ccc solid;
+}
+
+table.survey_answers tr.b td
+{
+	background: #748f9c;
+	border-right: 1px #ccc solid;
+}

@@ -1,0 +1,7 @@
+div.contact_form textarea
+{
+	width: 300px;
+	height: 75px;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}

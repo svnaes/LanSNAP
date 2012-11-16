@@ -1,0 +1,80 @@
+#upload_pane
+{
+	padding: 10px;
+	background: #99ccff;
+	border-bottom: 1px #666666 solid;
+}
+
+form
+{
+	margin: 0;
+}
+
+body
+{
+	font-family: tahoma;
+	font-size: 8pt;
+	background: #cccccc;
+	margin: 0;
+	padding: 0;
+}
+
+.click
+{
+	cursor: pointer;
+}
+
+.click:hover
+{
+	text-decoration: underline;
+}
+
+.error
+{
+	padding: 5px;
+	color: maroon;
+}
+
+#file_list
+{
+	margin: 0;
+	padding: 10px;
+}
+
+li
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+li.thumb
+{
+	padding: 0;
+	float: left;
+	margin: 5px;
+	max-width: 200px;
+}
+
+li.thumb div.image
+{
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+	line-height: 8em;
+}
+
+li.thumb table
+{
+	width: auto;
+	margin: 0 auto;
+}
+
+li.thumb div.image table, li.thumb div.image td
+{
+	height: 100px;
+}
+
+li.thumb div.text
+{
+	text-align: center;
+}

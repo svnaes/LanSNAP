@@ -1,0 +1,21 @@
+
+#order_window
+{
+	border: 1px #000 dashed;
+	padding: 3px;
+	background: #ccc;
+}
+
+table.order_list_table th
+{
+	background: #000;
+	color: #fff;
+	font-size: 10px;
+	padding: 1px 5px;
+}
+
+table.order_list_table td
+{
+	background: #fff;
+	padding: 1px 5px;
+}

@@ -1,0 +1,23 @@
+
+
+#file_list
+{
+	width: 100%;
+	height: 240px;
+	background: #fff;
+	overflow-y: scroll;
+	overflow-x: none;
+}
+
+div.file_a, div.file_b
+{
+	padding: 5px;
+	margin: 1px;
+	border: 1px #333 solid;
+}
+
+div.file_a
+{
+	background: #999;
+}
+

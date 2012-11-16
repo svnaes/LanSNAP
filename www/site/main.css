@@ -1,0 +1,90 @@
+body
+{
+	margin: 0;
+	font-family: arial;
+	font-size: 12px;
+}
+
+form
+{
+	margin: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6
+{
+	margin: 10px 0;
+}
+
+.error
+{
+	color: red;
+	text-align: center;
+	padding: 5px;
+}
+
+.clear
+{
+	clear: both;
+}
+
+.click
+{
+	cursor: pointer;
+}
+
+.float_left
+{
+	float: left;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+a:hover, .click:hover
+{
+	text-decoration: underline;
+}
+
+#login
+{
+	width: 300px;
+	margin: 0 auto;
+	border: 1px #363636 solid;
+	margin-top: 300px;
+	font-family: tahoma;
+	font-size: 12px;
+	background: #fff;
+}
+
+#login form *
+{
+	font-family: tahoma;
+	font-size: 12px;
+}
+
+#login table
+{
+	margin: 30px;
+}
+
+#login_title
+{
+	background: url([URL]site/images/panel_top.jpg) top repeat-x;
+	height: 20px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+.center
+{
+	text-align: center;
+}
+
+.bold
+{
+	font-weight: bold;
+}

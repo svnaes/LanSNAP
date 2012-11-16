@@ -1,0 +1,28 @@
+#cf_fields
+{
+	height: 95%;
+}
+
+#cf_fieldlist
+{
+	overflow-y: scroll;
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	padding: 1px;
+}
+
+table.contact_history
+{
+	width: 100%;
+}
+
+table.contact_history tr.a td
+{
+	background: #fff;
+}
+
+table.contact_history tr.b td
+{
+	background: #666;
+}
